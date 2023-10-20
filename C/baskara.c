@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 #include <math.h>
@@ -6,16 +7,16 @@ int main()
 
   double a, b, c, delta, x1, x2;
 
-  printf("Coeficiente a: ");
+  printf("Digite o valor de a: ");
   scanf("%lf", &a);
-  printf("Coeficiente b: ");
+  printf("Digite o valor de b: ");
   scanf("%lf", &b);
-  printf("Coeficiente c: ");
+  printf("Digite o valor de c: ");
   scanf("%lf", &c);
 
   delta = pow(b, 2) - 4 * a * c;
 
-  if (a == 0 || delta < 0)
+  if (delta < 0 || a == 0)
   {
     printf("Impossivel calcular\n");
   }
